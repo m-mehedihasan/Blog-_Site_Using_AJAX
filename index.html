@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <!-- resetting -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+    <h1 id="main-head">Our custom blog site (Linking Tech Platform )</h1>
+    <div class="container">
+        <!-- title section  -->
+        <section class="title">
+            <div class="head">
+                <h1>Blog Site</h1>
+            </div>
+        </section>
+        <!-- posts section  -->
+        <section class="posts">
+           
+        </section>
+        <!-- new post section  -->
+        <section class="new_post">
+            <!-- create  post form  -->
+            <h1>Create a new Post</h1>
+            <div class="new_post_area">
+                <form method="POST" name="form1">
+                    <input type="text" id="id_post_title" class="form-control input" required placeholder="Post Title">
+                    <input type="text" id="id_author" class="form-control input" placeholder="Author name" required>
+                    <label for="id_post_date">
+                        Select Post Date
+                    </label>
+                    <input type="date" id="id_post_date" name="post_date" class="form-control" required>
+                    <!-- select options  -->
+                    <select name="post_type" id="id_post_type" class="form-control">
+                        <option value="custom">Custom</option>
+                        <option value="lorem">Lorem</option>
+                    </select>
+                    <!-- reading lorem size  -->
+                    <input type="text" class="form-control input" placeholder="Lorem Size" id="id_lorem_size">
+                    <!-- reading custom post  -->
+                    <textarea name="post_content" id="id_post_content" cols="10" rows="5" class="form-area"></textarea>
+                    <!-- buttom group area  -->
+                    <div class="form-control btn-group">
+                        <button class="post-btn">Post</button>
+                    </div>
+                </form>
+            </div>
+            <!-- end of new_post_area  -->
+        </section>
+    </div>
+</body>
+<!-- jQuery-3 -->
+<script src="js/jQuery-3.6.0.js"></script>
+<!-- custom js  -->
+<script src="js/app.js"></script>
+
+</html>
